@@ -3321,7 +3321,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 			if (e.nativeEvent instanceof MouseEvent) {
 		
 				console.log('jumpBtn mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'ArrowUp'}));
+				document.dispatchEvent(new KeyboardEvent('onkeydown',{'code':'ArrowUp'}));
 				
 			}})
 				that.jumpBtn.addEventListener('click',(e) => {
@@ -3391,7 +3391,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 				}})
 				
-		document.addEventListener('keydown', (e) => {
+		document.addEventListener('onkeydown', (e) => {
 			if (e.code === "ArrowUp") {
 		
 				handleKey.ArrowUp = d;
