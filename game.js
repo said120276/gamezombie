@@ -3318,17 +3318,18 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 		
 		
 		that.jumpBtn.addEventListener('mousedown',(e) => {
-			 alert('mousedown 0');
+			console.log('jumpBtn mousedown 0');
 			if (true || e.nativeEvent instanceof MouseEvent) {
 
-    alert('mousedown 1');
+    console.log('jumpBtn mousedown 1');
 			handleKey.ArrowUp = d;
 
 				
 			}})
 				that.jumpBtn.addEventListener('click',(e) => {
-					
+				console.log('jumpBtn click0')	
 				if (true || e.nativeEvent instanceof MouseEvent) {
+				console.log('jumpBtn click 1')	
 				handleKey.ArrowUp = u;
 				
 			}})
