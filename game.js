@@ -3320,74 +3320,65 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 		that.jumpBtn.addEventListener('mousedown',(e) => {
 			if (e.nativeEvent instanceof MouseEvent) {
 		
-				console.log('jumpBtn mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'ArrowUp'}));
+			handleKey.ArrowUp = d;
 				
 			}})
 				that.jumpBtn.addEventListener('click',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('jumpBtn clicked');
-				document.dispatchEvent(new KeyboardEvent('keyup',{'code':'ArrowUp'}));
+				handleKey.ArrowUp = u;
 				
 			}})
 				
 		that.downBtn.addEventListener('mousedown',(e) => {
 			
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('downBtn mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'ArrowDown'}));
+				handleKey.ArrowDown = d ;
 				
 			}})
 				that.downBtn.addEventListener('click',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('downBtn clicked');
-				document.dispatchEvent(new KeyboardEvent('keyup',{'code':'ArrowDown'}));
+				handleKey.ArrowDown = u;
+				
 				
 			}})
 				
 				that.attackBtn.addEventListener('mousedown',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('SPACE mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'Space'}));
+				handleKey.Space = d ;
+				
 				
 				}})
 				that.attackBtn.addEventListener('click',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('SPACE clicked');
-				document.dispatchEvent(new KeyboardEvent('keyup',{'code':'Space'}));
+				handleKey.Space = u;
 				
 			}})
 				that.LrunBtn.addEventListener('click',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('Lrun clicked');
-				document.dispatchEvent(new KeyboardEvent('keyup',{'code':'ArrowLeft'}));
+				handleKey.ArrowLeft = u ;
 				
 				}})
 				
 				that.LrunBtn.addEventListener('mousedown',(e) => {
 					
 				if (e.nativeEvent instanceof MouseEvent) {
-				console.log('Lrun mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'ArrowLeft'}));
-				
+				handleKey.ArrowLeft = d ;
 			}})
 				that.RrunBtn.addEventListener('mousedown',(e) => {
 					if (e.nativeEvent instanceof MouseEvent) {
 				
-				console.log('Rrun mousedown');
-				document.dispatchEvent(new KeyboardEvent('keydown',{'code':'ArrowRight'}));
+				handleKey.ArrowRight = d ;
 				
 			}})
 					that.RrunBtn.addEventListener('click',(e) => {
 						if (e.nativeEvent instanceof MouseEvent) {
 					
-				console.log('Rrun clicked');
-				document.dispatchEvent(new KeyboardEvent('keyup',{'code':'ArrowRight'}));
+				handleKey.ArrowRight = u;
 				
 				}})
 				
