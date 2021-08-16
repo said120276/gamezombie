@@ -3328,7 +3328,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 			}})
 				that.jumpBtn.addEventListener('click',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true || e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowUp = u;
 				
 			}})
