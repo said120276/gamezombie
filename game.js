@@ -3390,6 +3390,8 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				that.LrunBtn.addEventListener('mouseout',(e) => {
 					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
+					if (that.hero.stt != 'dead')
+					idle(that.hero);
 				handleKey.ArrowLeft = u;
 				
 			}})
@@ -3415,7 +3417,8 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				}})
 				that.RrunBtn.addEventListener('mouseout',(e) => {
 					if (true ||e.nativeEvent instanceof MouseEvent) {
-				
+				if (that.hero.stt != 'dead')
+					idle(that.hero);
 				handleKey.ArrowRight = u ;
 				
 			}})
