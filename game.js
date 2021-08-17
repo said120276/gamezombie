@@ -3334,6 +3334,15 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 			}})
 				
+				that.jumpBtn.addEventListener('mouseout',(e) => {
+			console.log('jumpBtn mouseout 0');
+			if (true || e.nativeEvent instanceof MouseEvent) {
+
+    console.log('jumpBtn mouseout 1');
+			handleKey.ArrowUp = u;
+
+				
+			}})
 		that.downBtn.addEventListener('mousedown',(e) => {
 			
 				if (true ||e.nativeEvent instanceof MouseEvent) {
@@ -3345,6 +3354,12 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowDown = u;
 				
+				
+			}})
+			that.downBtn.addEventListener('mouseout',(e) => {
+			
+				if (true ||e.nativeEvent instanceof MouseEvent) {
+				handleKey.ArrowDown = u ;
 				
 			}})
 				
@@ -3372,7 +3387,12 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 		
 				
 				}})
+				that.LrunBtn.addEventListener('mouseout',(e) => {
+					
+				if (true ||e.nativeEvent instanceof MouseEvent) {
+				handleKey.ArrowLeft = u;
 				
+			}})
 				that.LrunBtn.addEventListener('mousedown',(e) => {
 					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
@@ -3393,7 +3413,14 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 					idle(that.hero);
 		
 				}})
+				that.RrunBtn.addEventListener('mouseout',(e) => {
+					if (true ||e.nativeEvent instanceof MouseEvent) {
 				
+				handleKey.ArrowRight = u ;
+				
+			}})
+			
+			
 		document.addEventListener('keydown', (e) => {
 			if (e.code === "ArrowUp") {
 		
