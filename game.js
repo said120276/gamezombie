@@ -3364,13 +3364,19 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				that.LrunBtn.addEventListener('click',(e) => {
 					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
+					console.log('jumpBtn click 1')
 				handleKey.ArrowLeft = u ;
+				
+				if (that.hero.stt != 'dead')
+					idle(that.hero);
+		
 				
 				}})
 				
 				that.LrunBtn.addEventListener('mousedown',(e) => {
 					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
+					console.log('LrunBtn mousedown 1')
 				handleKey.ArrowLeft = d ;
 			}})
 				that.RrunBtn.addEventListener('mousedown',(e) => {
@@ -3383,7 +3389,9 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 						if (true ||e.nativeEvent instanceof MouseEvent) {
 					
 				handleKey.ArrowRight = u;
-				
+				if (that.hero.stt != 'dead')
+					idle(that.hero);
+		
 				}})
 				
 		document.addEventListener('keydown', (e) => {
