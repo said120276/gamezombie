@@ -3336,13 +3336,13 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 		that.downBtn.addEventListener('mousedown',(e) => {
 			
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowDown = d ;
 				
 			}})
 				that.downBtn.addEventListener('click',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowDown = u;
 				
 				
@@ -3350,37 +3350,37 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 				that.attackBtn.addEventListener('mousedown',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.Space = d ;
 				
 				
 				}})
 				that.attackBtn.addEventListener('click',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.Space = u;
 				
 			}})
 				that.LrunBtn.addEventListener('click',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowLeft = u ;
 				
 				}})
 				
 				that.LrunBtn.addEventListener('mousedown',(e) => {
 					
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowLeft = d ;
 			}})
 				that.RrunBtn.addEventListener('mousedown',(e) => {
-					if (e.nativeEvent instanceof MouseEvent) {
+					if (true ||e.nativeEvent instanceof MouseEvent) {
 				
 				handleKey.ArrowRight = d ;
 				
 			}})
 					that.RrunBtn.addEventListener('click',(e) => {
-						if (e.nativeEvent instanceof MouseEvent) {
+						if (true ||e.nativeEvent instanceof MouseEvent) {
 					
 				handleKey.ArrowRight = u;
 				
