@@ -3334,11 +3334,11 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 			}})
 				
-				that.jumpBtn.addEventListener('mouseout',(e) => {
-			console.log('jumpBtn mouseout 0');
+				that.jumpBtn.addEventListener('pressup',(e) => {
+			
 			if (true || e.nativeEvent instanceof MouseEvent) {
 
-    console.log('jumpBtn mouseout 1');
+   
 			handleKey.ArrowUp = u;
 
 				
@@ -3356,7 +3356,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				
 				
 			}})
-			that.downBtn.addEventListener('mouseout',(e) => {
+			that.downBtn.addEventListener('pressup',(e) => {
 			
 				if (true ||e.nativeEvent instanceof MouseEvent) {
 				handleKey.ArrowDown = u ;
@@ -3376,6 +3376,12 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 				handleKey.Space = u;
 				
 			}})
+			that.attackBtn.addEventListener('pressup',(e) => {
+					
+				if (true ||e.nativeEvent instanceof MouseEvent) {
+				handleKey.Space = u;
+				
+			}})
 				that.LrunBtn.addEventListener('click',(e) => {
 					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
@@ -3387,8 +3393,8 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 		
 				
 				}})
-				that.LrunBtn.addEventListener('mouseout',(e) => {
-					alert('mouseout')
+				that.LrunBtn.addEventListener('pressup',(e) => {
+					
 				if (true ||e.nativeEvent instanceof MouseEvent) {
 					if (that.hero.stt != 'dead')
 					idle(that.hero);
@@ -3415,7 +3421,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 					idle(that.hero);
 		
 				}})
-				that.RrunBtn.addEventListener('mouseout',(e) => {
+				that.RrunBtn.addEventListener('pressup',(e) => {
 					if (true ||e.nativeEvent instanceof MouseEvent) {
 				if (that.hero.stt != 'dead')
 					idle(that.hero);
