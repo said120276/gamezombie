@@ -4565,7 +4565,7 @@ p.nominalBounds = new cjs.Rectangle(-14.3,-25.8,26.9,52.400000000000006);
 			bloc_game(true);
 			stop_clock(true);
 			intro.addEventListener('click', startGame);
-			createjs.Sound.play("intro");
+			//createjs.Sound.play("intro");
 		
 			ready.removeEventListener('click', add_intro);
 			ready.visible = false;
