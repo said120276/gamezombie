@@ -35945,7 +35945,7 @@ p.nominalBounds = new cjs.Rectangle(-0.5,-13.5,658,342);
 	// timeline functions:
 	this.frame_25 = function() {
 		this.stop();
-		stage.enableMouseOver(20);
+		//stage.enableMouseOver(20);
 		    //this.bookcp.addEventListener("click", toNx);
 			this.bookcp.addEventListener("mouseover", overBtn);
 			this.bookcp.addEventListener("mouseout", outBtn);
@@ -42961,7 +42961,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.99999999999997,461.9);
 		
 		document.body.style.overflow = 'hidden';
 		
-		stage.enableMouseOver(20);
+		//stage.enableMouseOver(20);
 		
 		
 		
