@@ -1,2 +1,0 @@
-# gamezombie
- animate cc game
