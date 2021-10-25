@@ -43873,6 +43873,8 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.99999999999997,461.9);
 			contmrn.removeAllChildren();
 		
 			that.tool_enable(true, 'tmrn');
+			
+			cont.visible = true ;
 		
 			cont.startDrag();
 			cont.mouseEnabled = true;
@@ -43909,7 +43911,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.99999999999997,461.9);
 		
 			contmrn.addChild(cont.mc);
 		
-		
+		cont.visible = false ;
 			setTimeout(function () {
 		
 		
