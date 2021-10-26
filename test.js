@@ -48324,7 +48324,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 				cont.mouseEnabled = false;
 				cont.stopDrag();
-				alert('cont.visible = false ;')
+				alert('2;')
 				//cont.visible = false ;
 			}
 			that.tool_enable(false, 'tmrn');
@@ -48382,12 +48382,14 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 		function addTmrn() {
 		
-			//drawHjb();
+			drawHjb();
 		
 			tmrnAdded = true;
 		
 			cont.mc.x = 400 - (cont.mc.getBounds().width / 2);
 			cont.mc.y = 200 - (cont.mc.getBounds().height / 2);
+			
+			return ;
 		
 			contmrn.addChild(cont.mc);
 		
