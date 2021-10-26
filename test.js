@@ -51177,19 +51177,18 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 						sbr.getChildByName('f_shapeDraw').graphics.clear();
 					} else {
-						sbr.getChildByName('shapeDraw').graphics.beginStroke(that.tool.color)
+						var sp = sbr.getChildByName('shapeDraw') ;
+						sp.graphics.beginStroke(that.tool.color)
 		
-						.setStrokeStyle(that.tool.isErase ? that.tool.somk * 3 : that.tool.somk
-		
-							, "round")
+						.setStrokeStyle( that.tool.somk, "round")
 		
 						.moveTo(oldX, oldY)
 		
 						.lineTo(pt.x, pt.y);
 		
-						sbr.getChildByName('shapeDraw').updateCache("source-over");
+						sp.updateCache("source-over");
 		
-						sbr.getChildByName('shapeDraw').graphics.clear();
+						sp.graphics.clear();
 					}
 		
 				}
@@ -51352,11 +51351,15 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		}
 		
 		
-		
+		var sp ;
 		function sbr_on_mousedown(evt) {
 		
 			var sbr = evt.currentTarget;
 			evt.nativeEvent.preventDefault();
+		
+		
+						 sp = sbr.getChildByName('shapeDraw') ;
+						sp.graphics.beginStroke(that.tool.color)
 		
 		
 		
