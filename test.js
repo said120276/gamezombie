@@ -48324,6 +48324,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 				cont.mouseEnabled = false;
 				cont.stopDrag();
+				alert('cont.visible = false ;')
 				//cont.visible = false ;
 			}
 			that.tool_enable(false, 'tmrn');
