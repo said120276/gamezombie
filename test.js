@@ -48381,7 +48381,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 		function addTmrn() {
 		
-			drawHjb();
+			//drawHjb();
 		
 			tmrnAdded = true;
 		
@@ -50867,12 +50867,12 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 			shape_draw_x = type === 'ktb' ? 0 : 60;
 			shape_draw_y = type === 'ktb' ? 0 : 30;
-			shapeDraw.cache(shape_draw_x, shape_draw_y, 700, 430, 3);
+			shapeDraw.cache(shape_draw_x, shape_draw_y, 700, 430, 2);
 		
 			var f_shapeDraw = new createjs.Shape();
 			f_shapeDraw.name = 'f_shapeDraw';
 		
-			f_shapeDraw.cache(shape_draw_x, shape_draw_y, 700, 430, 3);
+			f_shapeDraw.cache(shape_draw_x, shape_draw_y, 700, 430, 2);
 		
 		
 		
