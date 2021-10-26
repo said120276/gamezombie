@@ -49708,7 +49708,7 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 		
 		function silManager(silMc) {
 		
-		
+		return;
 			var oldObject, pt, overObject, numOfLink = 0,
 				strngOfLinkDown, strngCode1, strngCode2, RorL;
 			var downOnAcceptedMc, isListener, lineToErase, currentUpMc, mmc, ismove;
