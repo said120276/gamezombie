@@ -48391,11 +48391,11 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.79999999999998,461.8);
 			
 			
 			contmrn.addChild(cont.mc);
-		cont.mc.cache();
+		
 		     
 			setTimeout(function () {
 		
-		
+		cont.mc.cache();
 		
 				switch (cont.mc.type) {
 		
