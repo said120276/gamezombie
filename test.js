@@ -29583,7 +29583,7 @@ p.nominalBounds = new cjs.Rectangle(-74,-9.2,95.9,63.3);
 		
 		function handle10(e) {
 			if (that.parent.isDragged) return;
-		
+		if (! e.nativeEvent instanceof MouseEvent) return ;
 		console.log("clicked" +e.currentTarget);
 			switch (e.currentTarget) {
 			
