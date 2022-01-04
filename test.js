@@ -43421,7 +43421,7 @@ createjs.Touch.enable(stage, true, false);
 		function toPrv(ev, swap = false) {
 		
 		     console.log('toPrev event' , ev)
-			if (swap || ev.nativeEvent instanceof MouseEvent) {
+			if (true || swap || ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage - 2 < 0) return;
 				currentPage -= 2;
@@ -43440,7 +43440,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function toNx(ev, swap = false) {
 		
-			if (swap || ev.nativeEvent instanceof MouseEvent) {
+			if (true || swap || ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage + 2 > maxPage) return;
 		
@@ -43684,7 +43684,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function toHome(e) {
 		
-			if (e.nativeEvent instanceof MouseEvent) {
+			if (true || e.nativeEvent instanceof MouseEvent) {
 		
 		
 				currentPage = home_page;
@@ -43744,7 +43744,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function toBook(e) {
 		
-			if (e.nativeEvent instanceof MouseEvent) {
+			if (true ||e.nativeEvent instanceof MouseEvent) {
 		
 		
 		
@@ -44116,7 +44116,7 @@ createjs.Touch.enable(stage, true, false);
 		
 			function extCommunicate(evt) {
 		
-				if (evt.nativeEvent instanceof MouseEvent) {
+				if (true || evt.nativeEvent instanceof MouseEvent) {
 					lectureMc.addChildAt(evt.currentTarget, lectureMc.numChildren - 1);
 		
 					if (!stat) {
@@ -44216,7 +44216,7 @@ createjs.Touch.enable(stage, true, false);
 			function musicToggle(eve) {
 		
 		
-				if (eve.nativeEvent instanceof MouseEvent) {
+				if (true || eve.nativeEvent instanceof MouseEvent) {
 		
 					if (!on && soundIsReady === true) {
 		
@@ -44452,7 +44452,7 @@ createjs.Touch.enable(stage, true, false);
 		
 			function onloun(e) {
 		
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true || e.nativeEvent instanceof MouseEvent) {
 		
 					if (e.currentTarget.currentFrame !== 0) {
 						e.currentTarget.gotoAndStop(0);
@@ -44668,7 +44668,7 @@ createjs.Touch.enable(stage, true, false);
 		
 			function onloun(e) {
 		
-				if (e.nativeEvent instanceof MouseEvent) {
+				if ( true || e.nativeEvent instanceof MouseEvent) {
 		
 					if (e.currentTarget.currentFrame !== 0) {
 						e.currentTarget.gotoAndStop(0);
@@ -44901,7 +44901,7 @@ createjs.Touch.enable(stage, true, false);
 			function onloun(e) {
 		
 		
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true || e.nativeEvent instanceof MouseEvent) {
 		
 					if (e.currentTarget.currentFrame !== 0) {
 						e.currentTarget.gotoAndStop(0);
@@ -45869,7 +45869,7 @@ createjs.Touch.enable(stage, true, false);
 		
 			function onKLK(e) {
 		
-				if (e.nativeEvent instanceof MouseEvent) {
+				if (true || e.nativeEvent instanceof MouseEvent) {
 					e.currentTarget.gotoAndStop(e.currentTarget.currentFrame == 0 ? 1 : 0);
 				}
 		
@@ -46441,7 +46441,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function toTools(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if (true || ev.nativeEvent instanceof MouseEvent) {
 				if (is_tool_clicked) {
 		
 					end_tool();
@@ -47120,7 +47120,7 @@ createjs.Touch.enable(stage, true, false);
 		function f_kom(eve) {
 		
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if (true || eve.nativeEvent instanceof MouseEvent) {
 		
 		
 				that.tool.is_feutre = true;
@@ -47145,7 +47145,7 @@ createjs.Touch.enable(stage, true, false);
 		function kom(eve) {
 		
 		
-			if (eve !== null && eve.nativeEvent instanceof MouseEvent) {
+			if (eve !== null && (true ||eve.nativeEvent instanceof MouseEvent)) {
 		
 		
 				that.tool.is_feutre = false;
@@ -47170,7 +47170,7 @@ createjs.Touch.enable(stage, true, false);
 		that.kom = kom;
 		function kom1(eve) {
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if ( true || eve.nativeEvent instanceof MouseEvent) {
 				//eve.stopPropagation() ; 
 		
 				that.tool.isErase = true;
@@ -47195,7 +47195,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function kom2(eve) {
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if ( true || eve.nativeEvent instanceof MouseEvent) {
 		
 		
 				that.tool.feutre.gotoAndStop(that.tool.current_f_color);
@@ -47207,7 +47207,7 @@ createjs.Touch.enable(stage, true, false);
 		}
 		function toSquare(eve) {
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if (true || eve.nativeEvent instanceof MouseEvent) {
 		
 		
 				that.tool.feutre.bkg.alpha = 0.6;
@@ -47233,7 +47233,7 @@ createjs.Touch.enable(stage, true, false);
 		}
 		function toCircle(eve) {
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if ( true || eve.nativeEvent instanceof MouseEvent) {
 		
 				that.tool.feutre.bkg.alpha = 0.6;
 				eve.currentTarget.bkg.alpha = 1;
@@ -47337,7 +47337,7 @@ createjs.Touch.enable(stage, true, false);
 		var is_settin_clicked = false;
 		function toSettin(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if ( true || ev.nativeEvent instanceof MouseEvent) {
 				if (is_settin_clicked) {
 		
 					remove_settin();
@@ -47353,7 +47353,7 @@ createjs.Touch.enable(stage, true, false);
 		var is_eye_clicked = false;
 		function toeye(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if ( true || ev.nativeEvent instanceof MouseEvent) {
 				if (!is_eye_clicked) {
 					that.blockChafaf();
 					chafaf.visible = false;
@@ -47374,7 +47374,7 @@ createjs.Touch.enable(stage, true, false);
 		var isDefault_menu = false;
 		function toDefault_menu(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if ( true || ev.nativeEvent instanceof MouseEvent) {
 				if (isDefault_menu) {
 					reset_menu();
 					isDefault_menu = false;
@@ -47421,7 +47421,7 @@ createjs.Touch.enable(stage, true, false);
 		var is_full_clicked = false;
 		function tofull(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if (true ||ev.nativeEvent instanceof MouseEvent) {
 				if (!is_full_clicked) {
 		
 					is_full_clicked = true;
@@ -47506,7 +47506,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		function toAnti_Square(eve) {
 		
-			if (eve.nativeEvent instanceof MouseEvent) {
+			if ( true || eve.nativeEvent instanceof MouseEvent) {
 		
 		
 		
