@@ -43573,7 +43573,7 @@ createjs.Touch.enable(stage, true, false);
 			if (update_coord) {
 		
 				//stage.update();
-				cont.isDragged = true;
+				if(newX > 5 || newY > 5) cont.isDragged = true;
 				update_coord = false;
 			}
 			console.log("from main fram 1 : cont.x  " + cont.x);
