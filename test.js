@@ -28341,7 +28341,7 @@ p.nominalBounds = new cjs.Rectangle(-100.8,-4.6,174.6,17);
 		
 		function chosSomk(evt) {
 		
-			if (evt.nativeEvent instanceof MouseEvent) {
+			if (true || evt.nativeEvent instanceof MouseEvent) {
 		
 			somk_is_clicked = !somk_is_clicked;
 			if (somk_is_clicked) {
@@ -29583,7 +29583,7 @@ p.nominalBounds = new cjs.Rectangle(-74,-9.2,95.9,63.3);
 		
 		function handle10(e) {
 			if (that.parent.isDragged) return;
-		if (! e.nativeEvent instanceof MouseEvent) return ;
+		//if (! e.nativeEvent instanceof MouseEvent) return ;
 		console.log("clicked" +e.currentTarget);
 			switch (e.currentTarget) {
 			
@@ -35902,7 +35902,7 @@ p.nominalBounds = new cjs.Rectangle(-1,-13.5,659,342);
 		
 		function addalfa(ev) {
 		
-			if (ev.nativeEvent instanceof MouseEvent) {
+			if (true || ev.nativeEvent instanceof MouseEvent) {
 		
 				clicked = !clicked;
 		
@@ -36381,7 +36381,7 @@ p.nominalBounds = new cjs.Rectangle(80.3,-115.9,246.3,300.20000000000005);
 		
 		function choose_ft(evt) {
 		
-			if (evt.nativeEvent instanceof MouseEvent) {
+			if (true || evt.nativeEvent instanceof MouseEvent) {
 		
 				feutreisclicked = !feutreisclicked;
 				if (feutreisclicked) {
@@ -36559,7 +36559,7 @@ p.nominalBounds = new cjs.Rectangle(-24.8,-25.7,120.2,47);
 		that.addEventListener("click", toMimsaha);
 		
 		function toMimsaha(evt) {
-			if (evt.nativeEvent instanceof MouseEvent) {
+			if (true || evt.nativeEvent instanceof MouseEvent) {
 		
 		
 				mimsaha_isclicked = !mimsaha_isclicked;
@@ -36736,7 +36736,7 @@ p.nominalBounds = new cjs.Rectangle(-74,-9.2,95.9,63.3);
 		this.addEventListener("click", choose);
 		
 		function choose(evt) {
-			if (evt.nativeEvent instanceof MouseEvent) {
+			if (true || evt.nativeEvent instanceof MouseEvent) {
 		
 		
 				qalamisclicked = !qalamisclicked;
@@ -43573,6 +43573,7 @@ createjs.Touch.enable(stage, true, false);
 			if (update_coord) {
 		
 				//stage.update();
+				cont.isDragged = true;
 				update_coord = false;
 			}
 			console.log("from main fram 1 : cont.x  " + cont.x);
