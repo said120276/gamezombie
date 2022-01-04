@@ -43420,6 +43420,7 @@ createjs.Touch.enable(stage, true, true);
 		
 		function toPrv(ev, swap = false) {
 		
+		     console.log('toPrev event' , ev)
 			if (swap || ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage - 2 < 0) return;
