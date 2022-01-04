@@ -42988,11 +42988,79 @@ p.nominalBounds = new cjs.Rectangle(-271.9,-466,171.99999999999997,461.9);
 		
 		
 		
-		createjs.Touch.enable(stage, true, true);
 		
-		
-		
-		var isTouch = createjs.Touch.isSupported();
+
+createjs.Touch.isSupported = function () {
+	return !!(('ontouchstart' in window) // iOS & Android
+		|| (window.navigator['msPointerEnabled'] && window.navigator['msMaxTouchPoints'] > 0) // IE10
+		|| (window.PointerEvent && window.navigator['maxTouchPoints'] > 0)); // IE11+
+};
+console.log('createjs.Touch.isSupported ', createjs.Touch.isSupported())
+
+createjs.Touch._IE_enable = function (stage) {
+
+	var f = stage.__touch.f = function (e) {
+		createjs.Touch._IE_handleEvent(stage, e);
+	};
+
+	alert('window.PointerEvent == undefined' + window.PointerEvent === undefined)
+	if (window.PointerEvent === undefined) {
+		canvas.addEventListener("MSPointerDown", f, false);
+		window.addEventListener("MSPointerMove", f, false);
+		window.addEventListener("MSPointerUp", f, false);
+		window.addEventListener("MSPointerCancel", f, false);
+		if (stage.__touch.preventDefault) {
+			canvas.style.msTouchAction = "none";
+		}
+	} else {
+		alert(' in new Touch._IE_enable')
+		canvas.addEventListener("pointerdown", f, false);
+		window.addEventListener("pointermove", f, false);
+		window.addEventListener("pointerup", f, false);
+		window.addEventListener("pointercancel", f, false);
+		if (stage.__touch.preventDefault) {
+			canvas.style.touchAction = "none";
+		}
+
+	}
+	stage.__touch.activeIDs = {};
+};
+
+
+
+
+
+createjs.Touch.enable = function (stage, singleTouch, allowDefault) {
+	if (!stage || !stage.canvas || !createjs.Touch.isSupported()) {
+		return false;
+	}
+	if (stage.__touch) {
+		return true;
+	}
+
+	// inject required properties on stage:
+	stage.__touch = {
+		pointers: {},
+		multitouch: !singleTouch,
+		preventDefault: !allowDefault,
+		count: 0
+	};
+
+	// note that in the future we may need to disable the standard mouse event model before adding
+	// these to prevent duplicate calls. It doesn't seem to be an issue with iOS devices though.
+	if ('ontouchstart' in window) {
+		createjs.Touch._IOS_enable(stage);
+	} else if (window.navigator['msPointerEnabled'] || window.PointerEvent) {
+		createjs.Touch._IE_enable(stage);
+	}
+	return true;
+};
+
+
+
+createjs.Touch.enable(stage, true, true);
+
+
 		
 		setTimeout(function () {
 		
