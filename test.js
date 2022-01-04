@@ -43496,7 +43496,7 @@ createjs.Touch.enable(stage, true, false);
 		
 		
 			cont.isDragged = false;
-		
+		    cont.isMoveOn = false;
 			cont.addEventListener("pressmove", onpressmove);
 		
 			previous_x_update = false;
@@ -43545,7 +43545,7 @@ createjs.Touch.enable(stage, true, false);
 		function onpressmove(e) {
 		
 		
-			
+			cont.isMoveOn = true;
 		
 			var pt = that.globalToLocal(e.stageX, e.stageY);
 		
@@ -43573,6 +43573,7 @@ createjs.Touch.enable(stage, true, false);
 			if (update_coord) {
 		
 				//stage.update();
+				console.log('newX ', newX)
 				if(newX > 5 || newY > 5) cont.isDragged = true;
 				update_coord = false;
 			}
@@ -43593,12 +43594,12 @@ createjs.Touch.enable(stage, true, false);
 			var pt = that.globalToLocal(evt.stageX, evt.stageY);
 		
 		
-			if ((Math.abs(evt.currentTarget.down.x - pt.x) * scaleFac) > 100 && !previous_x_update || (cont.isDragged && scaleFac === 0)) {
+			if ((Math.abs(evt.currentTarget.down.x - pt.x) * scaleFac) > 100 && !previous_x_update || (cont.isMoveOn  && scaleFac === 0)) {
 				swapToNext(evt.currentTarget.down.x - pt.x, evt);
 			}
 		
 			cont.isDragged = false;
-		
+		     cont.isMoveOn = false;
 			remove_settin();
 		
 		}
