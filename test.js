@@ -43058,7 +43058,7 @@ createjs.Touch.enable = function (stage, singleTouch, allowDefault) {
 
 
 
-createjs.Touch.enable(stage, true, true);
+createjs.Touch.enable(stage, true, false);
 
 
 		
