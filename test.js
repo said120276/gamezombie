@@ -43545,7 +43545,7 @@ createjs.Touch.enable(stage, true, false);
 		function onpressmove(e) {
 		
 		
-			cont.isDragged = true;
+			
 		
 			var pt = that.globalToLocal(e.stageX, e.stageY);
 		
